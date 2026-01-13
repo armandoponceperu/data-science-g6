@@ -1,0 +1,17 @@
+--sentencias DDL
+--create TABLE
+
+CREATE TABLE alumno(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nro_documento VARCHAR(20) NOT NULL,
+    nombre VARCHAR(255) NOT NULL,
+    email VARCHAR(100)
+);
+
+--ALTERAR UNA TABLA
+ALTER TABLE alumno
+ADD COLUMN nota INT DEFAULT 0;
+
+--ELIMINAR UNA TABLA
+DROP TABLE alumno;
+
